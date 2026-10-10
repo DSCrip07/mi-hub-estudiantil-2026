@@ -1,0 +1,8 @@
+:root {
+  --color-primario: #1f3a5f;
+  --color-fondo: #f5f7fa;
+  --color-texto: #222;
+  --color-tarjeta: #fff;
+  --espacio: 1rem;
+  --radio: 8px;
+}
