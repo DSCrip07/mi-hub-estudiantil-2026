@@ -110,3 +110,83 @@ a:hover {
 .tarjeta:hover {
   border-color: var(--color-acento);
 }
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio);
+}
+
+.contenedor-tarjetas .tarjeta {
+  flex: 1 1 250px;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-tarjeta);
+}
+
+th, td {
+  border: 1px solid #2b3a52;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+}
+
+th {
+  background-color: var(--color-acento);
+  color: var(--color-fondo);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 500px;
+}
+
+label {
+  color: #fff;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  background-color: var(--color-tarjeta);
+  color: var(--color-texto);
+  border: 1px solid #2b3a52;
+  border-radius: var(--radio);
+  font: inherit;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--color-acento);
+}
+
+button {
+  padding: 0.6rem 1rem;
+  background-color: var(--color-acento);
+  color: var(--color-fondo);
+  border: none;
+  border-radius: var(--radio);
+  cursor: pointer;
+  font: inherit;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  .contenedor-tarjetas {
+    flex-direction: column;
+  }
+
+  .contenedor-tarjetas .tarjeta {
+    flex: none;
+  }
+}
